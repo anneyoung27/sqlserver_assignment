@@ -16,7 +16,7 @@ CREATE TABLE #payment(
 	INTEREST_PAYMENT FLOAT
 );
 
-ALTER PROCEDURE sp_payment_schedule(@amountToPay FLOAT, @interestRate FLOAT, @tenorInMonth INT)
+CREATE PROCEDURE sp_payment_schedule(@amountToPay FLOAT, @interestRate FLOAT, @tenorInMonth INT)
 AS
 BEGIN
     DECLARE @interest FLOAT, @principal_payment FLOAT, @outstanding FLOAT, @loopingCounter INT = 1, @emi FLOAT
