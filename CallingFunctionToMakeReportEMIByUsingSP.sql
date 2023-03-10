@@ -1,4 +1,4 @@
-ALTER FUNCTION monthly_pay(@amountToPay FLOAT, @interestRate FLOAT, @tenorInMonth INT)
+CREATE FUNCTION monthly_pay(@amountToPay FLOAT, @interestRate FLOAT, @tenorInMonth INT)
 RETURNS FLOAT
 AS 
 BEGIN
