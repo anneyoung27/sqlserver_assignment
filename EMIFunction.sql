@@ -3,6 +3,6 @@ RETURNS FLOAT
 AS 
 BEGIN
 	DECLARE @emi FLOAT
-	SET @emi = @principal / (power(1+@rate,@periods)-1) * (@rate*power(1+@rate,@periods));
+	SET @emi = @principal / (POWER(1+@rate,@periods)-1) * (@rate*POWER(1+@rate,@periods));
 	RETURN @emi;
 END;
